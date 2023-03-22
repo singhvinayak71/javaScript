@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(182, 173, 161);
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center
+}
+.card{
+    margin: 10px 50px 10px;
+}
+img{
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black;
+    width: 200px;
+    height: 200px;
+}
+img:hover{
+    width: 202px;
+    height: 202px;
+}
+.disPercentage{
+    color: green;
+}
+.priceWithDiscount{
+    font-weight: 600;
+}
+.orignalPrice{
+    color: rgb(98, 93, 93);
+}

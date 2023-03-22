@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: rgb(249, 249, 249); */
+    background: linear-gradient(red, blue);
+}
+header{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    /* background-color: #fff; */
+    background: linear-gradient(yellow, rgb(178, 151, 151));
+    box-shadow: 1px 1px 2px black;
+}
+h1{
+    font-size: 40px;
+    height: 10%;
+    /* background-color: #fff; */
+}
+.container h2{
+    height: 10%;
+    margin-top: 10px;
+    /* background-color: #fff; */
+}
+.title{
+    height: 10%;
+    /* background-color: #fff; */
+    width: 100%;
+    text-align: center;
+}
+input[type = 'text']{
+    width: 25rem;
+    height: 2rem;
+}
+.btn{
+    width: 5rem;
+    height: 2rem;
+    background: linear-gradient(blue, black);
+    color: #ead7d7;
+    cursor: pointer;
+    border: none;
+    font-weight: 500;
+}
+.tasklist{
+    height: 70%;
+    width: 100%;
+    background-color: #ead7d7;
+}
+#addForm{
+    height: 8%;
+    /* background-color: black; */
+}
+hr{
+    width: 80%;
+    color: black;
+    margin-top: 5px;
+    padding: 1px;
+}
+.itemContainer{
+    margin-top: 20px;
+}
+.delete{
+    background-color: #4a2206;
+    color: #fff;
+    margin-left: 50px;
+    margin-right: 5px;
+}
+.edit{
+    background-color: green;
+    color: #fff;
+}
+.text-success{
+    color: rgb(12, 27, 12);
+    margin-bottom: 5px;
+}

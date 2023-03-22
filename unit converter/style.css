@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(179, 186, 193);
+}
+
+form{
+    background-color: rgb(28, 202, 202);
+    padding: 80px;
+    box-shadow: 1px 1px 5px black;
+}
+label{
+    font-size: 27px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+input{
+    margin-top: 30px;
+    text-align: center;
+    width: 5rem;
+    height: 2rem;
+}
+
+input[ type = submit] {
+    width: 5rem;
+    height: 2rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 2px;
+    color: aliceblue;
+    font-size: 16px;
+    background-color: blue;
+    text-transform: capitalize;
+    box-shadow: 1px 1px 5px black;
+    cursor: pointer;
+}
+
+#resultContainer{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+}

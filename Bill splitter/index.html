@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bill Splitter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- <h2>let splite bill</h2> -->
+    <section class="getInformation">
+      <!-- personal information -->
+      <div class="part1">
+        <fieldset class="personalInformation">
+            <legend>Personal Information</legend>
+            <label for="name">Full Name : </label>
+            <input type="text" id="name"/><br />
+            <label for="phone">Mobile : </label>
+            <input type="text" name="phone" id="phone" />
+          </fieldset>
+      </div>
+
+      <!-- ordered items informations -->
+      <div class="part2">
+        <fieldset>
+            <legend>Your Order</legend>
+
+            <label for="pizza">Pizza  (Rs. 350) :</label>
+            <input type="number" id="pizza" placeholder="Quantity"><br>
+
+            <label for="burger">Burger  (Rs. 150) :</label>
+            <input type="number" id="burger" placeholder="Quantity"><br>
+
+            <label for="samosa">Samosa  (Rs. 15) :</label>
+            <input type="number" id="samosa" placeholder="Quantity"><br>
+
+            <label for="ice">Ice-Cream (Rs. 150) :</label>
+            <input type="number" id="IceCream" placeholder="Quantity">
+        </fieldset>
+      </div>   
+    </section>
+
+    <!-- bill splite field -->
+    <section class="billContainer">
+        <section class="bill">
+            <h3> Name : <span id="displayUserName"> </span></h3>
+            <h3> Mobile : <span id="displayMobile"> </span></h3>
+        </section>
+        <table  border="1" >
+            <thead>
+                <tr>
+                    <th>Menu</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            
+            <tbody id="billStatement"> </tbody>
+            
+        </table>
+        <h1>Total Amout : <span id="totalAmount"></span> </h1>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

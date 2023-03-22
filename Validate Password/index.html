@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Password</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Password Validation</h1>
+    <form action="" onsubmit="validatePassword(); return false">
+        <label for="email">Enter Your Email</label>
+        <input type="text" name="email" id="email" title="The email field should contain the @ symbol.">
+        <p id="emailWorngMassage"></p>
+        <label for="password">Enter Your Password</label>
+        <input type="text" name="password" id="password" title=" The password field should have a minimum length of 8 characters.">
+        <p id="passMassage"></p>
+        <input type="submit" value="Submit">
+
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>

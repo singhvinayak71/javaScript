@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.cart{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(175, 175, 203);
+    gap: 10px;
+
+}
+.cartItems{
+    background-color: rgb(239, 246, 251);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 25%;
+    border: 2px solid black;
+    flex-direction: column;
+    gap: 10px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+      <h1>ToDo List</h1>
+
+    <div class="container">
+      <h2>Add Items</h2>
+
+      <label id="lblsuccess" class="text-success" style="display: none"></label>
+      
+      <form id="addForm">
+            <input
+              type="text"
+              onkeyup="toggleButton(this, 'submit')"
+              id="item"
+            />
+
+            <input
+              type="submit"
+              class="btn"
+              id="submit"
+              value="Submit"
+              disabled
+            />
+      </form>
+
+      <h3>Task List</h3>
+      <hr>
+     <div class="itemContainer">
+        <ul class="list-group" id="items"></ul>
+     </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

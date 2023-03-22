@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <center>  
+        <h1> Verify Valid Password </h1>  
+        
+        <form onsubmit ="verifyPassword();  return false">  
+        <!-- Enter Password   -->
+        <label> Enter Password : </label>  
+        <input type = "password" id = "pswd" value = ""><br><br> 
+        <label> Confirm Password : </label>  
+        <input type = "password" id = "cpswd" value = ""><br><br>
+        <p id="massage"></p>
+        <button>Submit</button>
+        </form>  
+        </center> 
+    <script src="./script.js"></script>
+</body>
+</html>

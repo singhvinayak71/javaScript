@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(46, 36, 192);
+}
+.cart{
+    display: flex;
+    /* margin: 50px; */
+    text-align: center;
+    width: 60%;
+    height: 60%;
+    background-color: rgb(51, 51, 113);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px black;
+    text-align: center;
+    /* place-items: center; */
+}
+.store{
+    color: rgb(190, 238, 15);
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+h2{
+    margin-bottom: 20px;
+}
+.itemsValue{
+    color: rgb(189, 189, 211);
+    font-size: 18px;
+}
+#totalPrice{
+    color: rgb(206, 206, 23);
+    font-size: 30px;
+    font-weight: 600;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Change Text on Button click</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+    body{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(118, 129, 138);
+    }
+    button{
+        width: 8rem;
+        height: 3rem;
+        font-size: 20px;
+        background-color: blueviolet;
+        border: none;
+        border-radius: 5px;
+    }
+    h1{
+        color: rgb(206, 248, 18);
+        text-transform: capitalize;
+    }
+</style>
+<body>
+    <h1 id="changeText"></h1>
+    <button onclick="myfunction()">Click here</button>
+    <script src="./script.js"></script>
+</body>
+</html>
