@@ -8,14 +8,10 @@ const userWithdraw = document.getElementById("userWithdraw");
 const btnWithdraw = document.getElementById("btnWithdraw");
 
 // Create our number formatter.
-const formatter = new Intl.NumberFormat('en-US', {
+const formatter = new Intl.NumberFormat('en-IN', {
     style: 'currency',
-    currency: 'USD',
+    currency: 'INR',
     minimumFractionDigits: 2,
-    /* 
-    the default value for minimumFractionDigits depends on the currency
-    and is usually already 2
-    */
   });
 
 // accept deposits from user, store deposits in array
@@ -23,13 +19,13 @@ btnDeposit.addEventListener('click', () => {
 
     // checks if deposit is a number
     if (isNaN(userDeposit.value)) {
-        alert("Please enter a number.");
+        alert("Please enter a valid number.");
         return userDeposit.value = '';
     } else {
 
     // checks if deposit meets parameters
         if (userDeposit.value < 0.01 || userDeposit.value > 10000) {
-            alert("You can only deposit between $0.01 and $10,000.")
+            alert("You can only deposit between ₹0.01 and ₹10,000.")
             return userDeposit.value = '';
         } else {
     
@@ -40,7 +36,7 @@ btnDeposit.addEventListener('click', () => {
 
         // format TotalBalance to show $ XX.XX (2 decimal places)
         let totalBalanceFormatted = formatter.format(totalBalance);
-        document.getElementById("acctBalanceLbl").innerHTML = totalBalanceFormatted;
+        document.getElementById("accountBalance").innerHTML = totalBalanceFormatted;
 
     // print deposit to console to verify success
     console.log("$" + userDeposit.value);
@@ -55,7 +51,7 @@ btnWithdraw.addEventListener('click', () => {
 
     // checks if withdrawal is a number
     if (isNaN(userWithdraw.value)) {
-        alert("Please enter a number.");
+        alert("Please enter a valid number.");
         return userWithdraw.value = '';
     } else {
 
@@ -72,7 +68,7 @@ btnWithdraw.addEventListener('click', () => {
 
         // format TotalBalance to show $ XX.XX (2 decimal places)
         let totalBalanceFormatted = formatter.format(totalBalance);
-        document.getElementById("acctBalanceLbl").innerHTML = totalBalanceFormatted;
+        document.getElementById("accountBalance").innerHTML = totalBalanceFormatted;
 
     // print withdrawal to console to verfify success
     console.log("$" + userWithdraw.value);
@@ -84,4 +80,4 @@ btnWithdraw.addEventListener('click', () => {
 // format TotalBalance to show $ XX.XX (2 decimal places)
 
 let totalBalanceFormatted = formatter.format(totalBalance);
-document.getElementById("acctBalanceLbl").innerHTML = totalBalanceFormatted;
+document.getElementById("accountBalance").innerHTML = totalBalanceFormatted;

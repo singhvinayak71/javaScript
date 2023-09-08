@@ -1,6 +1,6 @@
 function verifyPassword() {
-  const pw = document.getElementById("pswd").value;
-  const cpw = document.getElementById("cpswd").value;
+  const pw = document.getElementById("password" ).value;
+  const cpw = document.getElementById("cnfPassword").value;
   const massage = document.getElementById('massage')
 
 
@@ -23,4 +23,8 @@ function verifyPassword() {
     massage.style.color = "green"
     return true;
   }
+}
+
+function toggle(){
+  document.getElementById('massage').style.display = "none"
 }

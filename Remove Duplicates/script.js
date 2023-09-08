@@ -1,8 +1,6 @@
-console.log("hello world")
-function addCart(){
-    console.log("item has been added")
-    let newElement = document.createElement('p')
-    let id = newElement.setAttribute('id' , "para")
-    // id.innerHTML = "hello";
-
+const addCart = () =>{
+    console.log("hello world");
+    // const product1 = document.getElementById("product1")   
+    const product1 = document.getElementById("p1")   
+    console.log(product1)
 }

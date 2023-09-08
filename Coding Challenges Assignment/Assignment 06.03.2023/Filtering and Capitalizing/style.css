@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(140, 175, 177);
+    /* color: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    height: 10%;
+    color: blue;
+
+}
+.bookStore{
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows: repeat(3 , 1fr);
+    align-items: center;
+    justify-items: center;
+    background: linear-gradient(gray , rgb(43, 36, 36));
+    box-shadow: 1px 2px 3px black; 
+}
+.bookStore div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(46, 58, 58);
+    width: 60%;
+    height: 70%;
+    color: #fff;
+    
+}
+.bookStore div div:first-child{
+    font-weight: 700;
+    font-size: 22px;
+    color: blueviolet;
+    /* box-shadow: 1px 2px 3px black;  */
+}
+.bookStore div i:last-child{
+    margin-bottom: 10px;
+    color: rgb(156, 156, 163);
+}
+p{
+    margin: 8px 0;
+}

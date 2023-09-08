@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bdc3dd;
+    flex-direction: column;
+    font-weight: 600;
+}
+h1{
+    height: 10%;
+}
+#itemStore{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2 , 1fr);
+    gap: 10px;
+    background-color: #432424;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+}
+#itemStore div{
+    width: 80%;
+    height: 60%;
+    background-color: #847474;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+ 
+#itemStore div div:first-child{
+    font-size: 25px;
+    font-weight: 600;
+}
