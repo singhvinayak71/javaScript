@@ -25,4 +25,4 @@ console.log(string)
 const result = countVowel(string);
 
 console.log("Total number of vowel is " , result);
-document.getElementById('name').innerHTML = ` "${string}" Have Total ${result} Number Of Vowel`
+document.getElementById('name').innerHTML = ` "${string}" Have Total ${result} Number Of Vowel`;
