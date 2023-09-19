@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form validation</title>
+    <script src="https://kit.fontawesome.com/dac19fde53.js" crossorigin="anonymous"></script>
     <style>
         body{
             background-color: #3498db;
@@ -37,6 +38,11 @@
             margin: 0px;
             text-align: left;
         }
+        #check{
+            position: relative;
+            right: 28px;
+            width: 10px;
+        }
     </style>
 </head>
 <body>
@@ -45,7 +51,9 @@
         <form action="" onsubmit="return validateForm()">
             <input type="text" id="username" placeholder="User Name"><br>
             <p id="userError" class="error"></p>
-            <input type="text" id="password" placeholder="Password"><br>
+            <input type="password" id="password" placeholder="Password">
+                <!-- <i id="check" class="fa-regular fa-eye"></i> -->
+                <input type="checkbox"  id="check">
             <p id="passwordError" class="error"></p>
             <input type="submit" value="Submit">
         </form>
@@ -79,7 +87,14 @@
                 document.getElementById("passwordError").innerHTML = ""
             }
         }
+        // show or hide password
+        check.onclick = togglePassworld;
+        function togglePassworld(){
+            if(check.checked) password.type = "text";
+            else password.type = "password"
+        }
 
     </script>
 </body>
 </html>
+
