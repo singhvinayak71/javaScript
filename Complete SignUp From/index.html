@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="https://kit.fontawesome.com/dac19fde53.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="flex">
+    <h1>Sign Up</h1>
+    <form action=""  onsubmit="return validateForm()">
+        <!-- name feild -->
+        <input type="text" name="name" id="name" placeholder="Name">
+        <p class="error" id="nameError"></p>
+
+        <!-- Mobile -->
+        <input type="text" name="mobile" id="mobile" placeholder="Mobile">
+        <p class="error" id="mobileError"></p>
+
+        <!-- email -->
+        <input type="email" name="email" id="email" placeholder="Email">
+        <p class="error" id="emailError"></p>
+
+        <!-- password -->
+        <input type="password" name="password" id="password" placeholder="Password">
+        <input type="checkbox" class="check"  id="check">
+        <p class="error" id="passwordError"></p>
+
+        <!-- confirm Password -->
+        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password">
+        <i class="bi bi-eye-slash" id="togglePassword"></i>
+        <input type="checkbox" class="check"  id="confirmCheck">
+        <!-- <span id="showPassword" onclick="showPassword()">show</span> -->
+        <p class="error" id="confirmPasswordError"></p>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>

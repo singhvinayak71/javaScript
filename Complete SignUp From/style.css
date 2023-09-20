@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* background-color: #9a7878; */
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(189, 204, 199);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  /* width: 200px; */
+  margin: 10px 0px;
+  padding: 10px;
+  background-color: aquamarine;
+  padding: 50px;
+}
+input {
+  margin: 5px;
+  width: 200px;
+  padding: 5px;
+  /* border: none; */
+  outline: none;
+  color: black;
+}
+input[type = "submit"]{
+  width: 215px;
+  margin-top: 25px;
+  background-color: #3498db;
+
+}
+.error{
+    color: red;
+}
+.check{
+  position: relative;
+  right: 32px;
+  width: 12px;
+}
