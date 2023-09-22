@@ -80,5 +80,3 @@ function validateForm(){
             if(confirmCheck.checked) confirmPassword.type = "text";
             else confirmPassword.type = "password"
         }
-
-        
