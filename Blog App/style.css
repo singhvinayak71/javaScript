@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#blog-posts {
+    margin: 20px;
+}
+
+.post {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#add-post {
+    margin: 20px;
+}
+
+#add-post input,
+#add-post textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#add-post button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
